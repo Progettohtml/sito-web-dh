@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<html lang="it">
+<head>
+  <title>IL TEOREMA: Sottoproletariato e Pasolini</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="stile/stile.css"/>
+  <script src="js/main.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Special Elite' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <h1>IL TEOREMA <br> Sottoproletariato e Pasolini</h1>
+    <div class="header" id="top">
+    <nav>
+      <ul>
+        <li><a href="index.html"class="navbar-button">Home</a></li> <li><a class="navbar-button" href="list-items.html">Cinema</a></li> <li><a href="#"class="navbar-button">Prosa</a></li> <li><a href="#"class="navbar-button">Poesia</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- HTML content -->
+  <main>
+    <div class="text-field">
+   <p><h3>Riordina la lista</h3></p>
+          <a href="#" class="btn default" title="In ordine cronologico">Ordine cronologico</a>
+          <a href="#" class="btn bg-pink" title="Dalla A alla Z">Dalla A alla Z</a>
+          <a href="#" class="btn bg-blue" title="Dalla Z alla A">Dalla Z alla A</a>
+        </div>
+         <!-- right column -->
+      <div class="rightcolumn">
+        <h2>Catalogo</h2>
+        <!-- tabs -->
+        <!-- tab links -->
+        <div class="tab">
+          <button
+            class="tablinks"
+            id="defaultOpen"
+            onclick="openCity(event, 'Tutto')"
+          >
+            Tutto
+          </button>
+          <button
+            class="tablinks"
+            id="defaultOpen"
+            onclick="openCity(event, 'Neorealismo')"
+          >
+            Neorealismo
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Simbolismo')">
+            Simbolismo
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Documentari')">
+            Documentari
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'L'ultimo Pasolini')">
+            L'ultimo Pasolini
+          </button>
+        </div>
+                <!-- tab content -->
+        <!-- Tutto -->
+        <div id="Tutto" class="tabcontent">
+          <h2>Cinema <span>1961-1975</span></h2>
+          <!-- search bar -->
+    <div class="container">
+        <div class="search-container">
+            <input type="text" placeholder="Trova...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="img/accattone.png" alt="Accattone">
+     <div class="text-field">
+      <h3><i>Accattone</i> (1961)</h3>
+        <a class="navbar-button" href="item.html">Vai al film</a> </div>
+    </div>
+    <div class="gallery-item">
+      <img src="img/porcile.png" alt="Image 2">
+ <div class="text-field">
+       <h3><i>Porcile</i> (1969)</h3>
+      <a class="navbar-button" >Vai al film</a></div>
+    </div>
+    <div class="gallery-item">
+      <img src="img/comizi.amore.png" alt="Image 3">
+      <div class="text-field">
+       <h3><i>Comizi d'amore</i> (1964)</h3> 
+        <a class="navbar-button" >Vai al film</a></div>
+    </div>
+    <div class="gallery-item">
+      <img src="img/mamma.roma.png" alt="Image 4">
+      <div class="text-field">
+      <h3><i>Mamma Roma</i> (1962)</h3>
+      <a class="navbar-button" >Vai al film</a> </div>
+    </div>
+        <div class="gallery-item">
+      <img src="img/salò.png" alt="Image 4">
+      <div class="text-field">
+        <h3><i>Salò o le 120 giornate di Sodoma</i> (1975)</h3>
+      <a class="navbar-button" >Vai al film</a></div>
+    </div>
+        <div class="gallery-item">
+      <img src="img/teorema.png" alt="Image 4">
+      <div class="text-field">
+        <h3><i>Teorema</i> (1968)</h3>  
+      <a class="navbar-button" >Vai al film</a></div>
+    </div>
+        <div class="gallery-item">
+      <img src="img/decameron.png" alt="Image 4">
+      <div class="text-field">
+        <h3><i>Il Decameron</i> (1971)</h3>
+      <a class="navbar-button" >Vai al film</a></div>
+    </div>
+        <div class="gallery-item">
+      <img src="img/uccellacci.png" alt="Image 4">
+      <div class="text-field">
+        <h3><i>Uccellacci e uccellini</i> (1966)</h3> 
+      <a class="navbar-button" >Vai al film</a></div>
+    </div>
+</div>
+ <!-- pagination -->
+          <div>
+            <div class="pagination">
+              <a href="#" title="Prev">&laquo;</a>
+              <a href="#" class="active" title="1">1</a>
+              <a href="#" title="2">2</a>
+              <a href="#" title="3">3</a>
+              <a href="#" title="4">4</a>
+              <a href="#" title="Next">&raquo;</a>
+            </div>
+          </div>
+        </div>
+</main>
+ <footer>
+    <p><a href=#top class="navbar-button">Torna su</a> <i class="arrow up"></i> <a href="#"></a></p>
+    <p>&copy; 2023 Carolina Barberis, Digital Humanities UNIBO.</p>
+  </footer>
+<script>
+  // tab
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
